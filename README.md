@@ -1,4 +1,4 @@
-# Kweh-clone-cog
+# Kweh-clone-cog // WIP -> Might never happen
 This is a test to transfert Kweh to red-discordbot cog
 
 ## How to setup
