@@ -21,6 +21,30 @@ class Kweh(commands.Cog):
             force_registration=True,
         )
 
+
     async def red_delete_data_for_user(self, *, requester: RequestType, user_id: int) -> None:
         # TODO: Replace this with the proper end user data removal handling.
         super().red_delete_data_for_user(requester=requester, user_id=user_id)
+
+
+    # Entrypoint
+    @commands.group()
+    async def ffxiv(self, ctx: commands.Context):
+        """Entrypoint to use ffxiv related commands."""
+        pass
+
+    @ffxiv.command(name="kweh")
+    async def ffxiv_kweh(self, ctx):
+        """Kweh"""
+        await ctx.send("Kweh !")
+
+    # User
+    @ffxiv.group(name="user")
+    async def user(self, ctx: commands.Context):
+        """User informations"""
+        pass
+
+    @user.command(name="kweh")
+    async def user_kweh(self, ctx):
+        """Kweh"""
+        await ctx.send("Kweh! Dear user! Kweh!")
