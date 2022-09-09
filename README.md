@@ -38,3 +38,7 @@ Contact your bot inside discord and use :
 %cd%/env/Scripts/activate.bat
 redbot <instance name> --dev
 ```
+
+//
+%cd%/env/Scripts/activate.bat
+redbot testbot --dev
